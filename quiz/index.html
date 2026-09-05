@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0908">
+<meta name="description" content="Bible Quiz — test and grow your knowledge of Scripture with Raja Faith Ministries.">
+<title>Bible Quiz — Raja Faith Ministries</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="https://rajafaithministries.com/images/logo.webp">
+</head>
+<body data-page="quiz" data-subpage="true">
+<aside class="verse-rail" aria-hidden="true"><span>Your word is a lamp to my feet.  —  Psalm 119:105</span></aside>
+<div id="header-slot"></div>
+
+<main class="quiz-shell">
+  <div class="wrap">
+    <div class="breadcrumbs" style="margin-bottom:var(--sp-6);"><a href="../index.html">Home</a><span>/</span>Bible Quiz</div>
+
+    <div class="quiz-card" id="quiz-intro">
+      <div class="eyebrow">Bible Quiz</div>
+      <h1 class="display display-md mt-4">Test your <em class="editorial" style="color:var(--gold-bright);">Scripture</em> knowledge.</h1>
+      <p class="lead mt-6">10 questions drawn from across the Bible — Old Testament, New Testament, Gospels, Epistles. Answer, learn, and grow. All scores are private and kept in your browser only.</p>
+      <div class="hero-cta mt-8">
+        <button class="btn btn-primary btn-lg" id="start-quiz">Start Quiz →</button>
+        <a class="btn btn-ghost btn-lg" href="../index.html">Back to home</a>
+      </div>
+    </div>
+
+    <div class="quiz-card" id="quiz-play" style="display:none;">
+      <div class="quiz-progress">
+        <span id="q-count">Question 1 / 10</span>
+        <div class="bar"><div class="fill" id="q-fill" style="width:10%;"></div></div>
+      </div>
+      <div class="quiz-q" id="q-text">Loading…</div>
+      <div class="quiz-options" id="q-options"></div>
+      <div class="quiz-explain" id="q-explain" style="display:none;"></div>
+      <div class="quiz-actions">
+        <button class="btn btn-ghost" id="btn-skip">Skip</button>
+        <button class="btn btn-primary" id="btn-next" style="display:none;">Next →</button>
+      </div>
+    </div>
+
+    <div class="quiz-card" id="quiz-result" style="display:none;">
+      <div class="quiz-result">
+        <div class="score"><span id="r-score">0</span>/10</div>
+        <h3 id="r-title">Great work!</h3>
+        <p id="r-message" style="color:var(--parchment-2);max-width:40ch;margin:1rem auto;">You've completed the quiz.</p>
+        <div class="hero-cta" style="justify-content:center;margin-top:2rem;">
+          <button class="btn btn-primary btn-lg" id="btn-retry">Try again</button>
+          <a class="btn btn-ghost btn-lg" href="../shop.html">Shop RFM Books</a>
+          <a class="btn btn-ghost btn-lg" href="../index.html">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="footer-slot"></div>
+<script src="../assets/js/partials.js"></script>
+<script src="../assets/js/main.js" defer></script>
+<script src="questions.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0908">
+<title>Product — RFM Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="https://rajafaithministries.com/images/logo.webp">
+</head>
+<body data-page="shop">
+<aside class="verse-rail" aria-hidden="true"><span>Every good and perfect gift is from above.  —  James 1:17</span></aside>
+<div id="header-slot"></div>
+
+<main class="product-detail">
+  <div class="wrap">
+    <div class="breadcrumbs"><a href="index.html">Home</a><span>/</span><a href="shop.html">Store</a><span>/</span><span id="crumb-cat">Product</span><span>/</span><span id="crumb-name">Loading…</span></div>
+
+    <div id="pd-body">
+      <!-- Populated by product-detail.js -->
+    </div>
+
+    <div id="related-section" style="margin-top:var(--sp-10); padding-top:var(--sp-8); border-top:1px solid var(--hairline);">
+      <div class="section-heading" data-reveal>
+        <div class="eyebrow">You may also like</div>
+        <h2 class="display display-sm">More from the <em>Store.</em></h2>
+      </div>
+      <div class="products" id="related-list" data-reveal></div>
+    </div>
+  </div>
+</main>
+
+<div id="footer-slot"></div>
+<script src="assets/js/partials.js"></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/product-detail.js" defer></script>
+</body>
+</html>
